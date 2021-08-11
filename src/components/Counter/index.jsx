@@ -44,9 +44,6 @@ class Counter extends Component {
         <input type="number" onChange={this.varibleNumber} />
         <br />
         <button onClick={this.counterNumber}>Добавить</button>
-        <br />
-        <br />
-        <button onClick={this.autoClicker}>autoClick </button>
       </>
     );
   }
