@@ -23,7 +23,6 @@ class WindowsSize extends Component {
 
   render() {
     const { width, height } = this.state;
-    console.log(this.props);
     return (
       <>
         <div>Width: {width}</div>

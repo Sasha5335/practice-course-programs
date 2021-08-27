@@ -34,7 +34,6 @@ class Counter extends Component {
 
   render() {
     const { count } = this.state;
-    console.log(this.props);
     return (
       <>
         <h2>{count}</h2>
