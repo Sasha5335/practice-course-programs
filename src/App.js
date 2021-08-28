@@ -6,6 +6,7 @@ import Counter from './components/Counter';
 import CaruselWallpaper from './components/CarouselWallpaper';
 import WindowsSize from './components/WindowsSize';
 import MouseTracker from './components/MouseTracker';
+import Tree from './components/Tree';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
               <Link to="/windowsSize">WindowsSize</Link>
             </li>
             <li>
+              <Link to="/tree">Tree</Link>
+            </li>
+            <li>
               <Link to="/mouseTracker">MouseTracker</Link>
             </li>
           </ul>
@@ -34,6 +38,8 @@ function App() {
           <Route path="/windowsSize" component={WindowsSize} />
 
           <Route path="/mouseTracker" component={MouseTracker} />
+
+          <Route path="/Tree" component={Tree} />
 
           <Route path="/caruselWallpaper">
             <Counter />
