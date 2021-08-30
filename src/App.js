@@ -7,6 +7,8 @@ import CaruselWallpaper from './components/CarouselWallpaper';
 import WindowsSize from './components/WindowsSize';
 import MouseTracker from './components/MouseTracker';
 import Tree from './components/Tree';
+import CommentsClass from './components/Comments/CommentsClass';
+import CommentsFunc from './components/Comments/CommentsFunc';
 
 function App() {
   return (
@@ -24,10 +26,13 @@ function App() {
               <Link to="/windowsSize">WindowsSize</Link>
             </li>
             <li>
+              <Link to="/mouseTracker">MouseTracker</Link>
+            </li>
+            <li>
               <Link to="/tree">Tree</Link>
             </li>
             <li>
-              <Link to="/mouseTracker">MouseTracker</Link>
+              <Link to="/comments">Comments</Link>
             </li>
           </ul>
         </nav>
@@ -35,20 +40,27 @@ function App() {
         <Switch>
           <Route exact path="/counter" component={Counter} />
 
-          <Route path="/windowsSize" component={WindowsSize} />
-
-          <Route path="/mouseTracker" component={MouseTracker} />
-
-          <Route path="/Tree" component={Tree} />
-
           <Route path="/caruselWallpaper">
             <Counter />
             <CaruselWallpaper />
             <WindowsSize />
           </Route>
+
+          <Route path="/windowsSize" component={WindowsSize} />
+
+          <Route path="/mouseTracker" component={MouseTracker} />
+
+          <Route path="/tree" component={Tree} />
+
+          <Route path="/comments">
+            <CommentsClass />
+            <CommentsFunc />
+          </Route>
+
+
         </Switch>
       </div>
-    </BrowserRouter>
+    </BrowserRouter >
   );
 }
 
