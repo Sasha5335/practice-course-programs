@@ -9,6 +9,7 @@ import MouseTracker from './components/MouseTracker';
 import Tree from './components/Tree';
 import CommentsClass from './components/Comments/CommentsClass';
 import CommentsFunc from './components/Comments/CommentsFunc';
+import Timer from './components/Timer';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             <li>
               <Link to="/comments">Comments</Link>
             </li>
+            <li>
+              <Link to="/timer">Timer</Link>
+            </li>
           </ul>
         </nav>
 
@@ -57,6 +61,7 @@ function App() {
             <CommentsFunc />
           </Route>
 
+          <Route path="/timer" component={Timer} />
 
         </Switch>
       </div>
